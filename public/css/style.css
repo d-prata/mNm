@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+:root {
+  --cor0: #ffffff;
+  --cor1: #d9d9d9;
+  --cor2: #303030;
+  --cor3: #000;
+}
+ 
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.imagem-fundo-index,
+.imagem-fundo-painel
+{
+  background-image: url(/public/images/Gritty\ Marbel\ Texture\ 05.jpg);
+  background-size: contain;
+  background-attachment: fixed ;
+}
+
+.box-login,
+.box-signup,
+.box-painel 
+{
+  background-color: #ffffff10;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.titulo {
+  color: var(--cor0);
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 2px rgb(106, 106, 106)
+}
+
+button.btn-g,
+input.btn-g
+{
+  background-color: var(--cor3);
+  border: none;
+  border-radius: 5px;
+  color: var(--cor0); 
+  font: normal normal lighter 1em Helvetica, sans-serif; 
+  cursor: pointer;
+  text-shadow: 0.5px 0.5px 2px rgb(106, 106, 106) 
+}
+
+button.btn-g:hover,
+input.btn-g:hover,
+#btn-salvar:hover,
+#btn-cancela-edicao:hover,
+.btn-card:hover, 
+button.btn-g:focus,
+input.btn-g:focus,
+#btn-salvar:focus,
+#btn-cancela-edicao:focus,
+.btn-card:focus
+{
+  background-color: var(--cor2);
+  color: var(--cor0); 
+}
+
+button.btn-g:active,
+input.btn-g:active,
+#btn-salvar:active,
+#btn-cancela-edicao:active,
+.btn-card:active
+{
+  color: var(--cor0); 
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+}
+
+::placeholder {
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+#btn-criar,
+#btn-voltar-login 
+{
+  font-weight: lighter;
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+
+#btn-criar:hover,
+#btn-voltar-login:hover 
+{
+  color: var(--cor3);
+  font-weight: bold;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer {
+  background-color:var(--cor2);
+  color: #fff;
+  position:fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+/* ---------------- CADASTRO ---------------- */
+
+form {
+  text-align: left;
+}
+
+label {
+  color: var(--cor0);
+  font-size: 1rem;   
+}
+
+/* ----------------- PAINEL ----------------- */
+.borda-div-principal-painel {
+  border: 15px solid var(--cor2)
+}
+
+#logo-mNm {
+  margin-bottom: 20px;
+}
+
+#espaco-alerta-recados {
+  z-index: 9999;
+}
+
+#icone-logout {    
+  color: var(--cor0);
+  cursor: pointer;
+  text-shadow: 0.5px 0.5px 2px rgb(106, 106, 106) 
+}
+
+#icone-logout:hover 
+{
+  color: var(--cor1); 
+}
+
+#icone-logout:active{
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#btn-salvar,
+#btn-cancela-edicao, 
+.btn-card {
+  background-color: var(--cor3);
+  color: var(--cor0);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  text-shadow: 0.5px 0.5px 2px rgb(106, 106, 106) 
+}
+.btn-card{
+  width: 40px;
+  height: 40px;
+}
+
+#linha-inicial{
+  text-align: center;
+  color: var(--cor0);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ @keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50%{
+    transform: scale(0.90);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
