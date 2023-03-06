@@ -20,6 +20,7 @@ O resultado foi esse sistema de notas e recados, com background marmorizado, que
 Aqui estão as tecnologias utilizadas neste projeto.
 
 * Typescript
+* HTML
 * CSS
 * Photoshop
 
@@ -73,6 +74,7 @@ The result was this system of notes and messages, with a marbled background, whi
 Here are the technologies used in this project.
 
 * typescript
+* HTML
 * CSS
 * Photoshop
 
